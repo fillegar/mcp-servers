@@ -56,3 +56,56 @@ Place the appropriate file in your workspace root or IDE-specific settings direc
        "servers": "./<filename>.json"
      }
    }
+   ```
+
+### Cursor IDE
+1. Open Cursor → Settings → MCP Tools.
+2. Click "Add MCP Server".
+3. Paste contents of the appropriate JSON file.
+4. Save and restart.
+
+### Visual Studio
+1. Use an extension that supports `mcp.json`.
+2. Load the correct file into the extension’s config directory.
+
+---
+
+## 🔐 qTest API Token Setup
+
+For `qtest.cursor.mcp.json`:
+
+1. Replace the placeholder:
+   ```json
+   "QTEST_TOKEN": "<your‑qTest‑API‑token>"
+   ```
+2. Generate token from your qTest profile or admin panel.
+
+---
+
+## ✅ Test Connectivity
+
+Use prompts in your IDE:
+- `List all Tosca test cases`
+- `Fetch defects from qTest`
+- `Show NeoLoad scenarios`
+
+You should see successful responses once connected.
+
+---
+
+## 🧪 Troubleshooting
+
+- Ensure your tenant URL is correct (e.g., `yourtenant.my.tricentis.com`)
+- Make sure port `56874` is open
+- For qTest, verify the token has proper permissions
+- Use `npx mcp-remote@latest` manually to test commands
+
+---
+
+## 📝 License
+
+[MIT License](LICENSE)
+
+---
+
+Made with ❤️ by [Gio](https://github.com/fillegar)
