@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "ToscaCloudMcpServer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://<yourtenant>.my.tricentis.com/default/_mcp/api/mcp",
+        "56874",
+        "--host",
+        "127.0.0.1",
+        "--static-oauth-client-info",
+        "{\"client_id\":\"MCPServer\"}",
+        "--static-oauth-client-metadata",
+        "{\"scope\":\"tta\"}"
+      ]
+    }
+  }
+}

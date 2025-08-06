@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "NeoLoadMcpServer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://<yourtenant>.neoload.tricentis.com/mcp",
+        "56874",
+        "--host",
+        "127.0.0.1"
+      ]
+    }
+  }
+}

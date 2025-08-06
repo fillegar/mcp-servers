@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "qTestMcpServer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://<yourtenant>.qtestnet.com/mcp",
+        "--header",
+        "Authorization:${QTEST_TOKEN}"
+      ],
+      "env": {
+        "QTEST_TOKEN": "<your-qTest-API-token>"
+      }
+    }
+  }
+}
